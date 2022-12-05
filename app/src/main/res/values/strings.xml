@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">بعثرة كلام</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Abbas Aleinzy</string>
+    <string name="nav_header_subtitle">Abbas@devf5r.com</string>
+    <string name="nav_header_desc">رأس التنقل</string>
+    <string name="action_settings">إعدادات</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">عرض الشرائح</string>
+    <string name="menu_night">وضع الليل</string>
+    <string name="menu_settings">إعدادات</string>
+    <string name="menu_about">معلومات عنا</string>
+    <string name="menu_contact">اتصل بنا</string>
+    <string name="menu_share">شارك التطبيق</string>
+    <string name="menu_rate">أعط نجمة</string>
+    <string name="menu_favorite">مفضل</string>
+    <string name="menu_today">ونقلت اليوم</string>
+    <string name="upgrade_to_premium">الترقية إلى المميزة</string>
+    <string name="developers_name">By : Abbas Aleinzy</string>
+    <string name="quote_of_the_day">اقتبس من اليوم</string>
+    <string name="app_description">تطبيق Premium Quotes هو تطبيق يعمل بنظام Android. يحتوي تطبيق Quotes Pro على واجهة سهلة الاستخدام وسهلة الإدارة</string>
+    <string name="policy_privacy">سياسة الخصوصية</string>
+    <string name="storage">اقتباسات حفظ الموقع</string>
+    <string name="storagelocation">التخزين الداخلي/</string>
+    <string name="title_notification">دفع الإخطار</string>
+    <string name="label_notification">تريد إخطارات للجدران من</string>
+    <string name="description_subsribte">مع تطبيقنا ، يمكنك الاستمتاع بتجربة خالية من الإعلانات والتركيز على الأساسيات</string>
+    <string name="version_label">إصدار</string>
+
+    //URL
+    <string name="privacy_policy_url">https://sites.google.com/view/baetharat-kalam/</string>
+    <string name="play_more_apps">https://play.google.com/store/apps/dev?id=7409631417125001865</string>
+
+    //ads
+    <string name="admob_app_id">ca-app-pub-4935178554510860~4350881078</string>
+    <string name="applovin_sdk_key">0GJdBwBnQuauCKZPxnTzDuPbawhMEWNO0GIPxco85WncDSxPZ9mPL2Qn2pvGloK6_VI6b88sSUIGKbdSBQexDm</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="label_cache">حذف ومسح ذاكرات التخزين المؤقت</string>
+    <string name="msg_cache_cleared">تم مسح ذاكرة التخزين المؤقت!</string>
+    <string name="_3_month">3 أشهر</string>
+    <string name="_1_month">1 شهر</string>
+    <string name="_20_fee_off">خصم 20٪ على الرسوم</string>
+    <string name="remove_ads">ازالة الاعلانات</string>
+    <string name="enjoy_premium_plans">استمتع بالباقات المميزة</string>
+    <string name="_6_month">6 شهور</string>
+    <string name="_12_month">12 شهرا</string>
+    <string name="our_tearm_and_conditions_can_included_a_clause_to_inform_users_that_certain_orders_at_your_sole_discretion">يمكن أن تتضمن الشروط والأحكام الخاصة بنا بندًا لإعلام المستخدمين بأن بعض الطلبات ، وفقًا لتقديرك الخاص</string>
+    <string name="night_mode">وضع الليل</string>
+    <string name="you_can_switch_your_app_to_dark_and_light_mode">يمكنك تبديل تطبيقك إلى الوضع الداكن والخفيف</string>
+    <string name="ad">اعلان</string>
+    <string name="body">Body</string>
+    <string name="title">Title</string>
+    <string name="share">مشاركة</string>
+    <string name="copy">نسخ</string>
+    <string name="save">حفظ</string>
+    <string name="like">اعجاب</string>
+    <string name="close">الغاء</string>
+    <string name="please_wait">أرجو الإنتظار..</string>
+    <string name="unlock_premium">افتح بريميوم</string>
+    <string name="instagram">انستغرام</string>
+    <string name="twitter">تويتر</string>
+    <string name="telegram">تلغرام</string>
+    <string name="facebook">فيس بوك</string>
+    <string name="share_text">مشاركة النص</string>
+    <string name="share_image">مشاركة الصورة</string>
+    <string name="search">بحث</string>
+
+
+</resources>

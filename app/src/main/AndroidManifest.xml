@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devf5r.kalam">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.devf5r.kalam.Activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PremiumQuotesAppCreatedByYMGDevelopers">
+        <activity android:name="com.devf5r.kalam.Activity.QuotesActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.FavoriteActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.All_Inflater_Activity"/>
+        <activity android:name="com.devf5r.kalam.Activity.ViewPagerActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.QuoteOfTheDayActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.SettingsActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.PrivacyActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.PrimeActivity"/>
+        <activity android:name="com.devf5r.kalam.Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.devf5r.kalam.Activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.PremiumQuotesAppCreatedByYMGDevelopers.NoActionBar">
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

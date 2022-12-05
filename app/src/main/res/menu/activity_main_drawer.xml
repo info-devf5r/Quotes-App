@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_today"
+            android:icon="@drawable/chat_arrow_grow_24"
+            android:title="@string/quote_of_the_day" />
+        <item
+            android:id="@+id/nav_favotite"
+            android:icon="@drawable/heart_24"
+            android:title="@string/menu_favorite" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/envelope_24"
+            android:title="@string/menu_contact" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info_24"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_24"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_night"
+            android:icon="@drawable/moon_stars_24"
+            android:title="@string/menu_night"
+            android:visible="false"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/star_24"
+            android:title="@string/menu_rate" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share_24"
+            android:title="@string/menu_share" />
+    </group>
+    <group
+        android:id="@+id/menu1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_insta"
+            android:icon="@drawable/instagram_24"
+            android:title="@string/instagram" />
+        <item
+            android:id="@+id/nav_twitter"
+            android:icon="@drawable/twitter_icon"
+            android:title="@string/twitter" />
+        <item
+            android:id="@+id/nav_telegram"
+            android:icon="@drawable/telegram_icon"
+            android:title="@string/telegram" />
+        <item
+            android:id="@+id/nav_facebook"
+            android:icon="@drawable/facebook_icon"
+            android:title="@string/facebook" />
+    </group>
+</menu>

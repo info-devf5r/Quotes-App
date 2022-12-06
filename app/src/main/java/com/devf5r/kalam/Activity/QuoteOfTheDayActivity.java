@@ -426,7 +426,7 @@ public class QuoteOfTheDayActivity extends AppCompatActivity {
                 ClipData clip = ClipData.newPlainText("label", quotes);
                 assert clipboard != null;
                 clipboard.setPrimaryClip(clip);
-                Toast.makeText(QuoteOfTheDayActivity.this, "Quotes Copied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(QuoteOfTheDayActivity.this, "تم النسخ", Toast.LENGTH_SHORT).show();
                 startSound();
             }
         });
@@ -449,9 +449,9 @@ public class QuoteOfTheDayActivity extends AppCompatActivity {
                                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                                 shareIntent.setType("text/plain");
                                 shareIntent.putExtra(Intent.EXTRA_TEXT, quotes + "\n https://play.google.com/store/apps/details?id="+getPackageName());
-                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Premium Quotes");
-                                startActivity(Intent.createChooser(shareIntent, "Share Quote"));
-                                Toast.makeText(QuoteOfTheDayActivity.this, "Share as Text", Toast.LENGTH_SHORT).show();
+                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "بعثرة كلام");
+                                startActivity(Intent.createChooser(shareIntent, "مشاركة"));
+                                Toast.makeText(QuoteOfTheDayActivity.this, "شارك كـ نص", Toast.LENGTH_SHORT).show();
                                 return true;
                             case R.id.sub_image:
                                 tv_quotes_watermark.setVisibility(View.VISIBLE);
@@ -463,9 +463,9 @@ public class QuoteOfTheDayActivity extends AppCompatActivity {
                                 intent.setType("*/*");
                                 intent.putExtra(Intent.EXTRA_STREAM, getLocalBitmapUri(bitmap));
                                 intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id="+getPackageName());
-                                startActivity(Intent.createChooser(intent, "Premium Quotes"));
+                                startActivity(Intent.createChooser(intent, "بعثرة كلام"));
                                 tv_quotes_watermark.setVisibility(View.INVISIBLE);
-                                Toast.makeText(QuoteOfTheDayActivity.this, "Share as Image", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(QuoteOfTheDayActivity.this, "شارك كـ صورة", Toast.LENGTH_SHORT).show();
 
                                 return true;
                         }
@@ -503,7 +503,7 @@ public class QuoteOfTheDayActivity extends AppCompatActivity {
         Uri bmpUri = null;
         try {
             File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES),
-                    "Premium Quotes" + System.currentTimeMillis() + ".png");
+                    "بعثرة كلام" + System.currentTimeMillis() + ".png");
             FileOutputStream out = new FileOutputStream(file);
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
             out.close();

@@ -7,6 +7,7 @@ public class Config {
     public static final String Twitter = "Abo2msh3al";
     public static final String Telegram = "f5r_klam";
     public static final String Facebook = "sabaa.alali.66";
+    public static final String Play_more_apps = "7409631417125001865";
 
     //إدارة حالة الإعلانات - on/off
     public static final String AD_STATUS = "on";

@@ -24,29 +24,31 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout android:orientation="horizontal"
+            <LinearLayout
                 android:id="@+id/layout_quote_header"
                 android:layout_width="fill_parent"
-                android:visibility="gone"
-                android:layout_height="50.0dip">
+                android:layout_height="50.0dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
 
-                <ImageView android:id="@+id/imgIcon"
-                    android:padding="10.0dip"
+                <ImageView
+                    android:id="@+id/imgIcon"
                     android:layout_width="50.0dip"
                     android:layout_height="fill_parent"
-                    app:tint="@android:color/black"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10.0dip"
                     android:src="@drawable/ic_menu_quote"
-                    android:contentDescription="@string/app_name" />
+                    app:tint="@android:color/black" />
 
                 <TextView
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textColor="@android:color/black"
-                    android:layout_gravity="center_vertical"
                     android:id="@+id/txtCategory"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
                     android:text="@string/app_name"
-                    android:layout_marginLeft="5.0dip" />
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 

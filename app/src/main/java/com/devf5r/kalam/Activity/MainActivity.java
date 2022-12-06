@@ -316,6 +316,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     Uri.parse("https://www.facebook.com/"+Config.Facebook));
             startActivity(browserIntent);
         }
+         if (menuItem.getItemId() == R.id.nav_play_more_apps){
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://play.google.com/store/apps/dev?id="+Config.Play_more_apps));
+            startActivity(browserIntent);
+        }
         if (menuItem.getItemId() == R.id.nav_night){
             return false;
         }

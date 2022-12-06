@@ -274,7 +274,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
                 ClipData clip = ClipData.newPlainText("label", fl.getName());
                 assert clipboard != null;
                 clipboard.setPrimaryClip(clip);
-                Toast.makeText(mCtx, "Quotes Copied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mCtx, "تم النسخ", Toast.LENGTH_SHORT).show();
                 startSound();
             }
         });
@@ -298,11 +298,11 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
                                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                                 shareIntent.setType("text/plain");
                                 shareIntent.putExtra(Intent.EXTRA_TEXT, fl.getName() + "\n https://play.google.com/store/apps/details?id="+mCtx.getPackageName());
-                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Premium Quotes");
+                                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "بعثرة كلام");
                                 shareIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                mCtx.startActivity(Intent.createChooser(shareIntent, "Share Quote").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-                                Toast.makeText(mCtx, "Share as Text", Toast.LENGTH_SHORT).show();
+                                mCtx.startActivity(Intent.createChooser(shareIntent, "مشاركة").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                                Toast.makeText(mCtx, "شارك كـ نص", Toast.LENGTH_SHORT).show();
                                 return true;
                             case R.id.sub_image:
                                 holder.tv_quotes_watermark.setVisibility(View.VISIBLE);
@@ -315,9 +315,9 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
                                 intent.putExtra(Intent.EXTRA_STREAM, getLocalBitmapUri(bitmap));
                                 intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id="+mCtx.getPackageName());
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                mCtx.startActivity(Intent.createChooser(intent, "Premium Quotes").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                                mCtx.startActivity(Intent.createChooser(intent, "بعثرة كلام").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
                                 holder.tv_quotes_watermark.setVisibility(View.INVISIBLE);
-                                Toast.makeText(mCtx, "Share as Image", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(mCtx, "شارك كـ صورة", Toast.LENGTH_SHORT).show();
 
                                 return true;
                         }
@@ -336,7 +336,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
         Uri bmpUri = null;
         try {
             File file = new File(mCtx.getExternalFilesDir(Environment.DIRECTORY_PICTURES),
-                    "Premium Quotes" + System.currentTimeMillis() + ".png");
+                    "بعثرة كلام" + System.currentTimeMillis() + ".png");
             FileOutputStream out = new FileOutputStream(file);
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
             out.close();

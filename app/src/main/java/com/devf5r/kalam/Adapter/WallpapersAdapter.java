@@ -440,7 +440,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                     ClipData clip = ClipData.newPlainText("label", w.title);
                     assert clipboard != null;
                     clipboard.setPrimaryClip(clip);
-                    Toast.makeText(mCtx, "Quotes Copied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mCtx, "تم النسخ", Toast.LENGTH_SHORT).show();
                     startSound();
                     showInterstitialAd();
                 }
@@ -465,9 +465,9 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                                     shareIntent.setType("text/plain");
                                     shareIntent.putExtra(Intent.EXTRA_TEXT, w.title + "\n https://play.google.com/store/apps/details?id=" + mCtx.getPackageName());
-                                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Premium Quotes");
-                                    mCtx.startActivity(Intent.createChooser(shareIntent, "Share Quote"));
-                                    Toast.makeText(mCtx, "Share as Text", Toast.LENGTH_SHORT).show();
+                                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "بعثرة كلام");
+                                    mCtx.startActivity(Intent.createChooser(shareIntent, "مشاركة"));
+                                    Toast.makeText(mCtx, "شارك كـ نص", Toast.LENGTH_SHORT).show();
                                     return true;
                                 case R.id.sub_image:
                                     //((WallpaperViewHolder) holder).tv_quotes_watermark.setVisibility(View.VISIBLE);
@@ -479,9 +479,9 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                                     intent.setType("*/*");
                                     intent.putExtra(Intent.EXTRA_STREAM, getLocalBitmapUri(bitmap));
                                     intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=" + mCtx.getPackageName());
-                                    mCtx.startActivity(Intent.createChooser(intent, "Premium Quotes"));
+                                    mCtx.startActivity(Intent.createChooser(intent, "بعثرة كلام"));
                                     //((WallpaperViewHolder) holder).tv_quotes_watermark.setVisibility(View.INVISIBLE);
-                                    Toast.makeText(mCtx, "Share as Image", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mCtx, "شارك كـ صورة", Toast.LENGTH_SHORT).show();
                                     showInterstitialAd();
 
                                     return true;
@@ -763,7 +763,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                     ClipData clip = ClipData.newPlainText("label", w.title);
                     assert clipboard != null;
                     clipboard.setPrimaryClip(clip);
-                    Toast.makeText(mCtx, "Quotes Copied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mCtx, "تم النسخ", Toast.LENGTH_SHORT).show();
                     startSound();
                     showInterstitialAd();
                 }
@@ -788,9 +788,9 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                                     shareIntent.setType("text/plain");
                                     shareIntent.putExtra(Intent.EXTRA_TEXT, w.title + "\n https://play.google.com/store/apps/details?id=" + mCtx.getPackageName());
-                                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Premium Quotes");
-                                    mCtx.startActivity(Intent.createChooser(shareIntent, "Share Quote"));
-                                    Toast.makeText(mCtx, "Share as Text", Toast.LENGTH_SHORT).show();
+                                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "بعثرة كلام");
+                                    mCtx.startActivity(Intent.createChooser(shareIntent, "مشاركة"));
+                                    Toast.makeText(mCtx, "شارك كـ نص", Toast.LENGTH_SHORT).show();
                                     return true;
                                 case R.id.sub_image:
                                     //((WallpaperViewHolder) holder).tv_quotes_watermark.setVisibility(View.VISIBLE);
@@ -802,9 +802,9 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
                                     intent.setType("*/*");
                                     intent.putExtra(Intent.EXTRA_STREAM, getLocalBitmapUri(bitmap));
                                     intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=" + mCtx.getPackageName());
-                                    mCtx.startActivity(Intent.createChooser(intent, "Premium Quotes"));
+                                    mCtx.startActivity(Intent.createChooser(intent, "بعثرة كلام"));
                                     //((WallpaperViewHolder) holder).tv_quotes_watermark.setVisibility(View.INVISIBLE);
-                                    Toast.makeText(mCtx, "Share as Image", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mCtx, "شارك كـ صورة", Toast.LENGTH_SHORT).show();
                                     showInterstitialAd();
 
                                     return true;
@@ -858,7 +858,7 @@ public class WallpapersAdapter extends RecyclerView.Adapter implements ActivityC
         Uri bmpUri = null;
         try {
             File file = new File(mCtx.getExternalFilesDir(Environment.DIRECTORY_PICTURES),
-                    "Premium Quotes" + System.currentTimeMillis() + ".png");
+                    "بعثرة كلام" + System.currentTimeMillis() + ".png");
             FileOutputStream out = new FileOutputStream(file);
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
             out.close();

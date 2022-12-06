@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static FavoriteDatabase favoriteDatabase;
     private Boolean DialogOpened = false;
     AppCompatButton btnUpgrade;
-    private static final String ONESIGNAL_APP_ID = "f8bf3c7f-fb54-4b9e-9be9-db9c149b57f2";
+    private static final String ONESIGNAL_APP_ID = "293007a4-fcf0-4128-97b5-71c764afd10c";
     PrefManager prf;
     AdNetwork adNetwork;
     AdsPref adsPref;
@@ -320,6 +320,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps/dev?id="+Config.Play_more_apps));
+            startActivity(browserIntent);
+        }
+         if (menuItem.getItemId() == R.id.nav_whatsapp){
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://api.whatsapp.com/send?phone="+Config.Whatsapp));
             startActivity(browserIntent);
         }
         if (menuItem.getItemId() == R.id.nav_night){

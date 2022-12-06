@@ -21,7 +21,7 @@
     <string name="upgrade_to_premium">الترقية إلى المميزة</string>
     <string name="developers_name">By : Abbas Aleinzy</string>
     <string name="quote_of_the_day">اقتبس من اليوم</string>
-    <string name="app_description">تطبيق بعثرة كلام هو تطبيق يعمل بنظام Android. يحتوي تطبيق Quotes Pro على واجهة سهلة الاستخدام وسهلة الإدارة</string>
+    <string name="app_description">تم انشاء تطبيق بعثرة كلام من قبل المطور عباس العنزي </string>
     <string name="policy_privacy">سياسة الخصوصية</string>
     <string name="storage">اقتباسات حفظ الموقع</string>
     <string name="storagelocation">التخزين الداخلي/</string>
@@ -64,6 +64,7 @@
     <string name="twitter">تويتر</string>
     <string name="telegram">تلغرام</string>
     <string name="facebook">فيس بوك</string>
+    <string name="whatsapp">واتس اب</string>
     <string name="play_more_apps2">تطبيقات أكثر</string>
     <string name="share_text">مشاركة النص</string>
     <string name="share_image">مشاركة الصورة</string>

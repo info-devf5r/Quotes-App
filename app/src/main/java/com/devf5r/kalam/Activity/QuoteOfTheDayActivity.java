@@ -352,8 +352,8 @@ public class QuoteOfTheDayActivity extends AppCompatActivity {
                         contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES);
                         Uri imageUri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
 
-                        Toast.makeText(QuoteOfTheDayActivity.this, "File Saved", Toast.LENGTH_SHORT).show();
-                        tv_save_quote.setText("Saved");
+                        Toast.makeText(QuoteOfTheDayActivity.this, "تم الحفظ", Toast.LENGTH_SHORT).show();
+                        tv_save_quote.setText("حفظ");
                         iv_save_quote.setImageResource(R.drawable.ic_menu_check);
                         try {
                             fos = resolver.openOutputStream(Objects.requireNonNull(imageUri));

@@ -61,7 +61,7 @@
             android:layout_below="@+id/NoQuotes2"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="No Favorite"
+            android:text="لايوجد شيئ الرجاء اضافة"
             android:textColor="@color/textColor"
             android:textSize="22sp" />
 
@@ -72,7 +72,7 @@
             android:layout_below="@+id/NoQuotesText"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="No Favorite Found ! \n Please add some Quotes."
+            android:text="لم يتم العثور على المفضلة! \n الرجاء إضافة بعض الاقتباسات."
             android:textColor="@color/textColor"
             android:alpha="0.8"
             android:textSize="17sp" />
@@ -82,15 +82,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/NoQuotesText1"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text=" + ADD "
-            android:padding="8dp"
-            android:visibility="gone"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:background="@drawable/side_nav_bar"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="+ إضافة"
             android:textColor="#fff"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:visibility="visible" />
 
     </RelativeLayout>
 

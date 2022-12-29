@@ -63,8 +63,8 @@
             android:icon="@drawable/facebook_icon"
             android:title="@string/facebook" />
         <item
-            android:id="@+id/nav_whatsapp"
-            android:icon="@drawable/whatsapp_icon"
-            android:title="@string/whatsapp" />
+            android:id="@+id/nav_my_telegram"
+            android:icon="@drawable/telegram_icon"
+            android:title="@string/my_telegram" />
     </group>
 </menu>

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.devf5r.kalam.Utils.TemplateView
+    <com.devf5r.msg.Utils.TemplateView
         android:id="@+id/admob_native_ad_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

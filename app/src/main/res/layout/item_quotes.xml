@@ -52,7 +52,7 @@
 
             </LinearLayout>
 
-            <com.devf5r.kalam.Utils.SquareRelativeLayout
+            <com.devf5r.msg.Utils.SquareRelativeLayout
                 android:layout_below="@id/layout_quote_header"
                 android:id="@+id/layout_quotes_parent_view2"
                 android:layout_width="match_parent"
@@ -129,7 +129,7 @@
 
                 </LinearLayout>
 
-            </com.devf5r.kalam.Utils.SquareRelativeLayout>
+            </com.devf5r.msg.Utils.SquareRelativeLayout>
 
 
             <View android:id="@+id/separator"

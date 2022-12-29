@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">بعثرة كلام</string>
+    <string name="app_name">مأفي قلبي</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Abbas Aleinzy</string>
@@ -21,21 +21,21 @@
     <string name="upgrade_to_premium">الترقية إلى المميزة</string>
     <string name="developers_name">By : Abbas Aleinzy</string>
     <string name="quote_of_the_day">اقتبس من اليوم</string>
-    <string name="app_description">تم انشاء تطبيق بعثرة كلام من قبل المطور عباس العنزي </string>
+    <string name="app_description">تم انشاء تطبيق مأفي قلبي♥️🌿 من قبل المطور عباس العنزي </string>
     <string name="policy_privacy">سياسة الخصوصية</string>
     <string name="storage">اقتباسات حفظ الموقع</string>
     <string name="storagelocation">التخزين الداخلي/</string>
     <string name="title_notification">دفع الإخطار</string>
     <string name="label_notification">تريد إخطارات للجدران من</string>
     <string name="description_subsribte">مع تطبيقنا ، يمكنك الاستمتاع بتجربة خالية من الإعلانات والتركيز على الأساسيات</string>
-    <string name="version_label">إصدار</string>
+    <string name="version_label">إصدار 1.7</string>
 
     //URL
     <string name="privacy_policy_url">https://sites.google.com/view/baetharat-kalam/</string>
     <string name="play_more_apps">https://play.google.com/store/apps/dev?id=7409631417125001865</string>
 
     //ads
-    <string name="admob_app_id">ca-app-pub-4935178554510860~4350881078</string>
+    <string name="admob_app_id">ca-app-pub-2741674687620852~6828769284</string>
     <string name="applovin_sdk_key">0GJdBwBnQuauCKZPxnTzDuPbawhMEWNO0GIPxco85WncDSxPZ9mPL2Qn2pvGloK6_VI6b88sSUIGKbdSBQexDm</string>
     <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
     <string name="label_cache">حذف ومسح ذاكرات التخزين المؤقت</string>
@@ -64,7 +64,7 @@
     <string name="twitter">تويتر</string>
     <string name="telegram">تلغرام</string>
     <string name="facebook">فيس بوك</string>
-    <string name="whatsapp">واتس اب</string>
+    <string name="my_telegram">راسلني</string>
     <string name="play_more_apps2">تطبيقات أكثر</string>
     <string name="share_text">مشاركة النص</string>
     <string name="share_image">مشاركة الصورة</string>
